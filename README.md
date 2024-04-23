@@ -1,6 +1,6 @@
 ## About
 
-This repo includes assignments 3 and 4: a nice-looking, simple webpage and a recipes website as the same website.
+This repo includes assignments 3 and 4: a nice-looking, simple webpage and a recipes website as the same website. [Live](https://6627e9093cbe91000867b471--nextjs-bootstap-tailwind-demo.netlify.app)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
