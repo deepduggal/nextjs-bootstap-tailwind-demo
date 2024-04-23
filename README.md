@@ -1,3 +1,7 @@
+## About
+
+This repo includes assignments 3 and 4: a nice-looking, simple webpage and a recipes website as the same website.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
