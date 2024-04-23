@@ -52,7 +52,15 @@ const Hero = () => {
   );
 };
 
-const ProjectCard = ({data}) => {
+type ProjectCardProps = {
+  data: {
+    id: string
+    title: string,
+    description: string
+  }
+};
+
+const ProjectCard = ({data}: ProjectCardProps) => {
   return (
     <Card className="my-2">
         <Card.Body>
@@ -68,7 +76,15 @@ const ProjectCard = ({data}) => {
   );
 };
 
-const ProjectsGrid = ({projects}) => {
+type ProjectsGridProps = {
+  projects: {
+    id: string,
+    title: string,
+    description: string
+  }[]
+}
+
+const ProjectsGrid = ({projects}: ProjectsGridProps) => {
   return (
     <Container as={"section"} className="grid my-4 px-4 md:grid-cols-3 md:gap-4 ">
       {projects.map(project => <ProjectCard key={project.id} data={project} />)}
@@ -119,15 +135,15 @@ const Footer = () => {
 };
 
 const projects = [{
-  id: 1,
+  id: crypto.randomUUID(),
   title: "Project 1",
   description: "This is a description for project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh."
 }, {
-  id: 2,
+  id: crypto.randomUUID(),
   title: "Project 2",
   description: "This is a description for project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh."
 }, {
-  id: 3,
+  id: crypto.randomUUID(),
   title: "Project 3",
   description: "This is a description for project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh."
 }];
